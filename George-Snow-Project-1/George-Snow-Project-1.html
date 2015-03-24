@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSnow IntroProgNanoD Notes</title>
+  
+  <link rel="stylesheet" href="George-Snow-Project-1.css">
+  <!-- link rel connects the CSS (name) to this HTML file -->
+  
+  <meta charset="utf-8">
+  <!-- meta charset="utf-8":
+  The charset attribute specifies the character encoding 
+  for the HTML document.
+  Tip: The charset attribute can be locally overridden 
+  using the lang attribute on any element.
+  http://www.w3schools.com/tags/att_meta_charset.asp -->
+
+</head>
+  <!-- Each section (h1) has a div with a class="section". 
+  Sub sections (h2) have a div with a class="subsection".
+  The concepts (h3), concept titles, and concept descriptions also have been put into divs with class names. Some concepts are grouped but I'm not sure if I'll give them separate styling yet.-->
+
+<body>
+  <div class="section">
+    <h1>Notes for Intro to Prog Nanodegree - George Snow</h1>
+  </div>
+    <div class="concept-description">
+      <p>Here are my class notes; many other items that were presented in the course that I already feel comfortable with or are reference material are added to my notes in MS OneNote. All the videos and presented text I downloaded from Udacity to my pc.
+      </p>
+    </div>
+  <div class="section">
+    <h1>Components of a Web Page</h1>
+  </div>
+    <div class="concept-description">
+      <p>HTML and CSS are "languages" (both with syntax and rules)<br>
+      HTML controls the "structure" of a web page, while CSS controls the "style" of a page (how it looks).<br>
+    </div>
+      When programmers talk about the "DOM" (Document Object Model)<br>
+      they are talking about the tree-like structure of a page.<br>
+      An HTML tag is an element in the (DOM) tree.<br>
+      </p>
+
+    <div class="subsection">
+      <h2>HTML HyperText Markup Language</h2>
+   </div>
+        <p>Everything on an HTML page is a box or inside a box.<br>
+        To "Boxify" a design is to break up the contents of a page into boxes.  CSS controls the look and shape of the boxes.
+        </p>
+
+        <p>HTML is made up of:<br>
+          - text content - <b>what (bold)</b> <em>you see 
+          (italics for emphasis)</em>
+        </p>
+
+        <p> - markup - what it looks like (this is in a paragraph)</p>
+         - (br for break to next line)<br>
+         - references to other documents - e.g., images and videos<br>
+         - links to other pages: This website is <a href="www.udacity.com">my favorite</a>
+        </p>
+
+      <div class="concept">
+        <div class="concept-title">
+        <h3>Tags and Attributes:</h3>
+      </div>
+        </div>
+         <div class="concept-description">
+          <p>"Tags" have attributes, ATTR which have a ="value" and are its contents, then put the end tag.<br>
+         </div>
+            An anchor creates links "a".<br>
+            <a href="www.reddit.com"> derp </a>
+            This is a link to reddit with the display of derp.<br>
+            <a href="http://www.w3schools.com/tags/default.asp">
+            W3Schools.com HTML Element Reference</a>
+          </p>
+          
+          <p>  <br>Lots       of      space in the    HTML code            will equal only       one
+
+
+            space   in the displayed 
+            page.<br>
+            <br>
+          </p>
+          
+          <p>An Image tag is called a Void tag because it doesn't have 
+          content and a closing tag.  <br>
+          The content is the source URL.<br> 
+          The alt text is to show something in the space where 
+          the image would be <br>
+          in the event that the images doesn't appear 
+          (such as a broken link).<br>
+          img scr="(URL)" alt="text" <br>
+           - img  for image<br>
+           - scr for source<br>
+           - URL for the location of the image<br>
+            - alt for alternate text to display<br>
+          <!-- I'm trying to get this image to appear, but it doesn't; maybe the full path is needed?
+          <img src="/images/Early_Jacuzzi_with_jets_2.jpg" alt="Early Jacuzzi with jets">-->
+          </p>
+        
+      <div class="concept">        
+        <div class="concept-title">
+        <h3>Element types - inline or block:</h3>
+      </div>
+        </div>        
+          <p>Examples of inline elements: "a" for links; "b" for <b>
+          bold </b>;
+          "br" for line break;<br>
+          <em>"em" italics for emphasis;</em> 
+          "img" image; <br>
+          "span" for Span <span>which keeps the item 
+          inside the tag </span> with the next item outside the tag.<br>
+          </p>
+      
+          <p>Examples of block elements: 
+          </p>
+          <p> "p" is a block for a paragraph, 
+          which creates an invisible box around the contents; <br>
+          which can have
+          height and length;</p>
+          <div>and "div" which behaves 
+          like a paragraph tag; </div>
+          also "form" which creates an HTML form 
+          for user input. <br>
+          </p>
+      
+          <p><span>Span and div are containers for text, and you can attach 
+          styles to them to affect the display;<br>
+          they have a class = "class name".</span><br>
+          <br>
+          What are ""Strong" and "Form"?<br>
+          <strong> "Strong" </strong> acts a bit like bold or 
+          italics for emphasis.<br>
+          <br>
+          The "form" element can contain one or more 
+          of the following elements:<br>
+              input<br>
+              textarea<br>
+              button<br>
+              select<br>
+              option<br>
+              optgroup<br>
+              fieldset<br>
+              label<br>
+          <br>
+          <Form>
+          name: <input><br>
+          comment: <input>
+          </form>
+          From:
+          <a href="http://www.htmlcodetutorial.com/forms/_FORM.html">
+          HTML Code Tutorial </a><br>
+          <br>
+          So which ones are inline: a, b, br, em, img, span, and strong<br>
+          Which ones are not?  div, form, and p.
+          </p>
+
+    <div class="subsection">     
+      <h2>CSS - Cascading Style Sheets</h2>
+    </div>
+    
+      <div class="concept">
+       <div class="concept-title">        
+       <h3>Definition</h3>
+      </div>
+       </div>
+        <div class="concept-description">   
+          <p>CSS stands for Cascading Style Sheets which gives programmers a way to control the style of related HTML elements. This is done by giving similar HTML elements the same classname and then specifying the style that should apply to that class.
+        </div>
+          </p>
+           <p>Add to the top of the HTML file the following element:<br>
+            (Left bracket): link rel="stylesheet" href="(name of file).css" (right bracket).  This connects the CSS file to this HTML file.
+          </p>
+
+      <div class="concept">
+        <div class="concept-title">     
+        <h3>Search and Replace</h3>
+      </div>
+        </div>
+         <div class="concept-description">           
+         <p>You can also think about CSS as a search and replace tool: you identify a class or a tag of the element you want to find (or match, in CSS terminology), and then what you want to do with it, or what property values to replace with different ones.
+         </p>
+         </div>
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Order Matters</h3>
+      </div>
+        </div>
+         <div class="concept-description">
+          <p>It also matters where you define the rules and in what order they are applied. Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:
+            • the default style of a browser (different browsers have slightly different styles)
+            • stylesheet in a separate file (this is what you will be mostly using)
+            • stylesheet inside HTML (this can be done for small projects but is not ideal)
+            • inline style in an element (this can also be done but should be avoided)
+         </div>
+          </p>
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Specifics Matter</h3>
+      </div>
+        </div>
+         <div class="concept-description">        
+          <p>"Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.<br>
+          In CSS, house rules are the same as national laws; but first you cascade down to the most specific rule that best describes the element, and that rule is applied.<br>
+          In CSS you select an element that you want to apply some style to; like p for paragraph; and all paragraphs will also have this style.
+          You can also select a class that was previously defined, and apply some style by using attribute: value; such as:<br>
+            .description {<br>
+              color: red;<br>
+            }<br>
+          You can also combine selectors; for example you can select all links that are inside an element, with the class: article.<br>
+          </p>
+         </div>
+
+      <div class="concept">
+        <div class="concept-title">
+        <h3>The Box Model</h3>
+      </div>
+        </div>
+         <div class="concept-description">
+          <p>The center of the box is where the Content goes; such as Text, or an image.<br>
+          The Padding is affected by the background color.<br>
+          The Border is inherited from the color property of the box.<br>
+          The Margin is the space between boxes, and is transparent with no properties.
+          </p>
+          
+          <p>So that it is easier to make layouts of boxes for the webpage, use CSS style:<br>
+          *{<br>
+            -webkit-box-sizing; border-box;<br>
+            -moz-box-sizing; border-box;<br>
+            -ms-box-sizing; border-box;<br>
+            box-sizing; border-box;<br>
+          }<br>
+          This includes border and padding and center for calculating the real size of a box.<br>
+          You can then tweek the size of the border and padding, but the size of the overall box will remain the same (it does not include margin).<br>
+          To display properly in older browsers, add Browser specific prefixes.<br>
+          Box size can be set by pixel or percentage.<br>
+          Also you can set max width, so if the box is set for percentage of the size of the screen, and the screen is shrunk by the user, the box will shrink or grow, up to the max width but not larger.
+          </p>
+
+         <p>Flexbox
+         </p>
+          <p>A great guide to flexbox can be found <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">here</a>!<br>
+          At around 1:02, Jessica adds the CSS rule display: flex to element.style, which adds the CSS directly to the div element on the left-hand side of the development tools. In future videos, this CSS rule will be in the main CSS file, style.css:<br>
+          .app {<br>
+              display: flex;<br>
+          }<br>
+          This rule as-is works with Chrome 29+, IE 11+, and Mozilla 28+. <br>
+          In order to support Safari, the -webkit- prefix must be added:<br>
+          .app {<br>
+              display: -webkit-flex;<br>
+              display: flex;<br>
+          }<br>
+          </p>
+
+          <p>Box Sizing
+          </p>
+          </p>There are four main points that Jessica addressed about box sizing.<br>
+            1. HTML elements are boxes and each box has 4 components.<br>
+            2. Because there are so many components to each box, it can often be hard to get the size of a box just right.<br>
+            3. There are two techniques you can use to help deal with sizing issues.<br>
+            <!--Not sure how to indent these next two items. -->
+              a. Set sizes in terms of percents rather than pixels.<br>
+              b. Set the box-sizing attribute to border-box for every element. <br>
+            4. Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.<br>
+          </p>
+          </p>Box Positioning<br>
+            1. Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.<br>
+            2. Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other.<br>
+            <br>
+            To get the extra white space between the image and the text, see Dev tools for margin for image box, save to css file.
+          </p><br>
+
+          <p>Example of style properties from course exercise:<br>
+            h1 {<br>
+              font-size: x-large;<br>
+              background-color: #33BEBE;<br>
+              color: white; <br>
+            }<br>
+            .screenshot {<br>
+              max-width: 460px;<br>
+            }<br>
+            .description {<br>
+              max-width: 705px;<br>
+              margin-left: 15px<br>
+            }<br>
+            <br>
+            The correct header background color is #33bebe<br>
+            As for the image margin - you could do it in many different ways, since the problem really is the whitespace between 2 boxes - image and the description.<br>
+            You could for example change the right margin of the image to push the text away. Or, leave the image margin at 0 and instead apply a style to the left margin of the text instead.<br>
+          </p>
+        </div>
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Thinking about "cascading"</h3>
+      </div>
+        </div>
+         <div class="concept-description">      
+          <p>Cascading is about inheritance, and understanding it requires abstract thinking.</p>
+        </div>
+          The following article is from Wikipedia <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">Inheritance</a>
+          <p>Inheritance
+         <div class="concept-description">            
+          Inheritance is a key feature in CSS, it relies on the ancestor-descendant relationship to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants. Inheritance relies on the document tree, which is the hierarchy of <a href="http://en.wikipedia.org/wiki/(X)HTML">(X)HTML</a> elements in a page based on nesting. Descendant elements may inherit CSS property values from any ancestor element enclosing them. In general, descendant elements inherit text-related properties, but box-related properties are not inherited. Properties that can be inherited are color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space and word-spacing. Properties that cannot be inherited are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.
+          Inheritance prevents certain properties from being declared over and over again in a style sheet, allowing the software developers to write less CSS. It enhances faster-loading of web pages by users and enables the clients to save money on bandwidth and development costs.
+          </p>
+       
+         <p>Example of inheritance.<br>
+          Given the following style sheet:<br>
+          h1 {<br>
+             color: pink;<br>
+          }<br>
+          Suppose there is an h1 element with an emphasizing element (em) inside:<br>
+          h1><br>
+             This to <em>illustrate</em> inheritance<br>
+          /h1><br>
+          If no color has been assigned to the em element, the emphasized word "illustrate" will inherit the color of the parent element, h1. The style sheet h1 has the color pink, hence, the em element will likewise be in pink.
+          </p>
+          <p>Very nice <a href="http://css-tricks.com/how-css-selectors-work/">article</a> on CSS selectors.
+          </p>
+         </div>
+       
+      <div class="concept">
+        <div class="concept-title">
+        <h3>How do I include CSS Styling in my web page?</h3>
+      </div>
+        </div>            
+          <p>There are three ways you can do this.<br>
+          Method 1: write CSS in the <head> of your HTML (not recommended)<br>
+          Method 2: Link your HTML to a separate CSS file (Best way)<br>
+          This adds another step, but it lets you stay more organized when working on larger projects. <br>
+          To do this: <br>
+          1. Write all of your structural HTML in one file (let's call it main.html). <br>
+          2. In a separate file (let's call it main.css), put all of your CSS code. <br>
+          3. Add a head> element to the top of your HTML. <br>
+          4. Add a link> tag inside the head> element. Since link> is a "void tag" you don't need to add a closing /link>. <br>
+          5. Add the following attributes to your link>: <br>* rel="stylesheet" * type="text/css" *href="main.css"<br>
+          For example, you would have a main.html file that looked like this:<br>
+          (left bracket)head><br>
+             (left bracket)link rel="stylesheet" type="text/css" href="main.css"><br>
+          (left bracket)/head><br>
+          (left bracket)body><br>
+            (left bracket)div><br>
+              This will have a red background.<br>
+            (left bracket)/div><br>
+          (left bracket)/body><br>
+          and in the same folder you would have a file called main.<br>css like this:<br>
+          div {<br>
+            background-color : red;<br>
+          }<br>
+          <br>
+          Method 3: Write your style inline with your HTML (not recommended)
+          </p>
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Avoiding Repetition</h3>
+      </div>
+        </div>
+         <div class="concept-description">        
+          <p>Avoiding repetition is important for a variety of reasons.</p>
+
+          <!--Here I want to avoid the repetition of adding line breaks by using CSS to format the paragraph. So this section will go across the page until I can fix it. Maybe with width: 50%; but it might not look good when the page is resized.-->
+          
+          <p>When programmers don't avoid repetition, <br>
+            they will often have to do the same thing over and over. <br>
+            This may mean copy and pasting certain style attributes into many HTML elements or rewriting the same code (sometimes with minor differences) many times. This can lead to errors when the programmer decides to make a change to something. If they don't dilligently make that same change everywhere the repeated code appears, problems will arise.
+          </p>
+      
+          <p>Consistency: In this web page, I wanted every lesson to look the same. Instead of manually giving each one the same style, I was able to assign each lesson div the same class and then specify the style for that class in only one place! By avoiding repetion, it's now very easy for me to make changes to this style.</p>
+         </div>
+
+      <div class="concept">
+        <div class="concept-title">
+        <h3>CSS Properties</h3>
+      </div>
+        </div>
+         <div class="concept-description">                 
+          <p>The font-style CSS property allows italic or oblique faces to be selected within a font-family.<br>
+          • Initial value normal<br>
+          • Applies to all elements. It also applies to ::first-letter and ::first-line.<br>
+          • Inherited yes<br>
+          • Media visual<br>
+          • Computed value as specified<br>
+          • Animatable no<br>
+          • Canonical order the unique non-ambiguous order defined by the formal grammar<br>
+          </p>
+        
+          <p>Syntax<br>
+          How to read CSS syntax.<br>
+          Formal syntax: normal | italic | oblique<br>
+          font-style: normal<br>
+          font-style: italic<br>
+          font-style: oblique<br>
+          font-style: inherit<br>
+          </p>
+        
+          <p>Values<br>
+          Italic forms are generally cursive in nature while oblique faces are typically sloped versions of the regular face. Oblique faces can be simulated by artificially sloping the glyphs of the regular face.<br>
+            normal<br>
+              Selects a font that is classified as normal within a font-family
+            italic<br>
+              Selects a font that is labeled italic, if that is not available, one labeled blique<br>
+            oblique<br>
+              Selects a font that is labeled oblique<br>
+          </p>
+        
+          <p>A Slightly Different Example of font-style<br>
+          The example shows the different font-style values. The CSS looks like this:<br>
+          <br>
+          p.normal { font-style:normal } <br>
+          p.italic { font-style:italic } <br>
+          p.oblique { font-style: oblique }<br>
+          <br>
+          From <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style">Mozilla CSS font-style</a>
+          </p>
+         </div>
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Examples of using properties of elements:</h3>
+      </div>
+        </div> 
+         <div class="concept-description">
+          <p>If you want to write CSS that makes all h1 elements have a black background and white text, you would write:<br>
+          h1 {<br>
+            background-color : black;<br>
+            color: white;<br>
+          }
+          </p>
+          <p>In this example, the h1 is a selector. It says to the browser "I want you to apply the rules I'm about to tell you to every h1 element."
+          After the h1 there is a left curly brace { and at the bottom there is a matching right curly brace }. Everything between these curly braces will be interpreted as a "rule" that should be applied to everyh1 element.
+          The line of code that says background-color : black; is a declaration. background-color is a propertyand black is the value of that property.
+          </p>
+
+          <p>HTML Article Tag</p>
+            <p>Example:<br>
+            (left bracket)article><br>
+              h1>Google Chrome/h1><br>
+              p>Google Chrome is a free, open-source web browser developed by Google, released in 2008./p><br>
+            (left bracket/article><br>
+            <br>
+            Definition and Usage<br>
+            The article tag specifies independent, self-contained content.
+            An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.<br>
+            <br>
+            Potential sources for the Article element:<br>
+            •Forum post<br>
+            •Blog post<br>
+            •News story<br>
+            •Comment<br>
+            <br>
+            Default CSS Settings<br>
+            Most browsers will display the article element with the following default values:<br>
+            article { <br>
+                display: block;<br>
+            }<br>
+            From: <a href="http://www.w3schools.com/tags/tag_article.asp">w3schools Tag article</a>
+            </p>
+
+          <p>Selecting by class<br>
+            In the example above, we set the background-color of every h1 to black. If we only want to add style to certain h1s, we can use class selectors. Try copying the following code into scratchpad.io to see how this works.<br>
+            (left bracket)div class="stop">(left bracket)/div><br>
+            (left bracket)div class="slow">(left bracket)/div><br>
+            (left bracket)div class="go">(left bracket)/div><br>
+            (left bracket)style><br>
+            div {<br>
+              height : 50px;<br>
+              width : 50px;<br>
+              border-radius: 25px;<br>
+            }<br>
+            .stop {<br>
+              background-color: red;<br>
+            }<br>
+            .slow {<br>
+              background-color: yellow;<br>
+            }<br>
+            .go {<br>
+              background-color: green;<br>
+            }<br>
+            (left bracket)/style><br>
+            We should see a traffic light. Note how in the style element we refer to an HTML element's class name by writing .class-name<br>
+            Also note how we can apply rules to all divs or just certain divs by using the appropriate selector.<br>
+            </p>
+           </div>
+
+    <div class="subsection">
+      <h2>The process of approaching a project.</h2>
+    </div>
+      <div class="concept-description">
+        <p> Code<br>
+        Test<br>
+        Refine<br>
+        (repeat)<br>
+        <br>
+        1. Boxify the structure; look for the natural boxes first. Identify the size of boxes; how to position the boxes on the screen.<br>
+        2. Then tags; look for the repeated styles and semantic elements.<br>
+        3. Write your HTML<br>
+        4. Apply styles (from BIGGEST to smallest)<br>
+        5. Fix things<br>
+        <br>
+        Look at your site in other browsers.<br>
+        Resize the window.<br>
+        Keep repeating steps 3 and 4 until you're happy, and your website looks like the design moc.<br>
+        <br>
+        Developer tools are very helpful.<br>
+        </p>
+       </div>
+
+  <div class="section">
+    <h1>The Process of Learning</h1>
+  </div>
+    <div class="concept-description">  
+      <p>The gap between beginning to learn something (novice stage) <br>
+      to being fluent (becoming an expert) is to think of <br>
+      the journey as a continuum of expertise.
+      </p>
+    </div>
+
+    <div class="subsection">
+      <h2>Four Stages of Expertise:</h2>
+    </div>
+      <div class="concept-description">        
+        <p>Ignorance (not knowing)<br>
+        Awareness (exposed to something new)<br>
+        Ability (acting on the new knowledge)<br>
+        Fluency (acting correctly without thinking about how, automatic)
+        </p>
+      
+        <p>Confusion and frustration are normal when learning something new, especially programming.  <br>
+        However, be careful that they don't lead to disappointment, or anger, or terror, or worse.
+        </p>
+       </div>
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Strategies to avoid disappointment:</h3>
+      </div>
+        </div>
+         <div class="concept-description">        
+          <p>1) ask for help<br>
+          Use Google search<br>
+          Use Udacity discussion forums<br>
+          Ask other classmates<br>
+          Getting things installed and working can often be one of the most frustrating parts of programming and even professional programmers struggle with these things.<br>
+          2) take a break<br>
+          3) just keep going on to the next section, which has the answers<br>
+          accept a little temporary confusion</p>
+          <p>When listening to experts, ask questions even if they seem basic.  <br>
+          An expert may forget what it was like to be a beginner and learn something complicated.  <br>
+          They might:<br>
+          a) assume you have knowledge that you don't<br>
+          b) use jargon you don't understand<br>
+          c) speak too quickly for you to understand.
+         </p>
+        </div>
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Reflection</h3>
+      </div>
+        </div>
+         <div class="concept-description">
+          <p>Reflecting on what you've learned helps you bridge the knowledge gap between how novices and experts think about this material.<br>
+          Think about the material.<br>
+          See how it is applied in the course materials.<br>
+          Imagine how I could use it.
+          </p>
+        </div>
+
+      <div class="concept">
+        <div class="concept-title">        
+         <h3>Summarize what you've learned</h3>
+      </div>
+        </div> 
+         <div class="concept-description">
+          <p>You should have a saved HTML file from the previous <br>
+            work session which contains your notes from lesson one. <br>
+            1. Open the HTML file you wrote and submitted during Stage 0 <br>
+             in a text editor. Read through it to remind yourself  <br>
+             what you learned in lesson one. <br>
+            2. Review lesson 2 by going through your notes  <br>
+            (or skimming through the lesson again). <br>
+            3. Try to group related facts from lesson 2 into big ideas <br>
+            and then summarize those ideas with a few sentences.  <br>
+            Add these ideas and summaries to your HTML.
+          </p>
+        </div>
+
+  <div class="section">
+    <h1>Tools</h1>
+  </div>
+    <div class="concept-description">
+      <p>Use the following tools:<br>
+      <a href="http://www.sublimetext.com/2">Sublime Text 2</a>;  (it's free).<br>
+      <p>When you open a project, open both the .html and .css files.<br>
+      This way you can see both at the same time.  Then open the .html file in Google Chrome.  After making changes in Sublime Text, refresh the page in Chrome to see the results.
+      </p>
+      <a href="Scratchpad.io">Scratchpad.io</a><br>
+      <br>
+      <a href="http://assignments.udacity-extras.appspot.com/courses/html-css/index.html">Udacity CSS Sample Pages</a><br>
+      <br>
+      Code Validation:<br>
+      <a href="http://validator.w3.org/#validate_by_input">HTML Code Validator</a>
+      <br>
+      <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">CSS Code Validator</a><br>
+      <br>
+      HTML:<br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla HTML</a><br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Mozilla HTML Element - div</a><br>
+      <br>
+      CSS:<br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla CSS</a><br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">Mozilla CSS Font</a>
+      </p>
+      <p> *************************</p>
+     </div>
+
+  <div class="section">
+    <h1>For when I have time</h1>
+  </div>
+    <div class="subsection">     
+      <h2>Cool Stuff To Try</h2>
+    </div>
+     <div class="concept-description">
+        <p>I'd like to apply an Ordered or unordered list to some of the sections in this document, such as the h3: Strategies to avoid disappointment: above.
+        </p>
+        
+        <ol>
+           <li>Coffee</li>
+           <li>Tea</li>
+           <li>Milk</li>
+        </ol>
+
+        <ul>
+           <li>Coffee</li>
+           <li>Tea</li>
+           <li>Milk</li>
+        </ul> 
+
+        <p>See: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style">Mozilla CSS List-Style</a>
+        </p>
+       </div>
+       
+    <div class="subsection">
+      <h2>Bugs I Know About</h2>
+    </div>
+        <p>Fix the image that isn't appearing at the top of this doc</p>
+
+</body>
+</html>
