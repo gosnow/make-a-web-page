@@ -1,0 +1,32 @@
+/* This is a CSS comment.*/
+
+/* This code gives <h1> a white TEXT color */
+.section {
+	color: white;
+}
+
+/* This code gives <h1> a dark grey background */
+.section {
+	background-color: darkgray
+}
+
+/* This code gives <h2> an italic font */
+.subsection {
+	font-style: italic;
+}
+
+/* This code gives <h3> a sans-serif and italic font */
+.concept {
+	font-family: sans-serif;
+	font-style: italic;
+}
+
+/* This following code gives <h3 text> a new larger font size;
+and only half the page; 
+although not applied everywhere*/
+.concept-description {
+	font-size: larger
+}
+.concept-description {
+	width: 50%
+}
